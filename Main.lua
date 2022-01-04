@@ -66,6 +66,8 @@ MainFrame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
 MainFrame.Position = UDim2.new(0.262487739, 0, 0.154031292, 0)
 MainFrame.Size = UDim2.new(0, 461, 0, 30)
 MainFrame.ZIndex = 3
+MainFrame.Active = true
+MainFrame.Draggable = true
 
 UICorner.Parent = MainFrame
 
