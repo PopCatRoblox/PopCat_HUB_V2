@@ -58,7 +58,7 @@ local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
 --Properties:
 
 PopCatHubV2.Name = "PopCatHubV2"
-PopCatHubV2.Parent = game.Workspace
+PopCatHubV2.Parent = game.CoreGui
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = PopCatHubV2
