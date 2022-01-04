@@ -47,11 +47,18 @@ local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
 local TextBox_3 = Instance.new("TextBox")
 local UICorner_12 = Instance.new("UICorner")
 local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local Walkspeed_2 = Instance.new("Frame")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
+local TextBox_4 = Instance.new("TextBox")
+local UICorner_14 = Instance.new("UICorner")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
 PopCatHubV2.Name = "PopCatHubV2"
-PopCatHubV2.Parent = game.CoreGui
+PopCatHubV2.Parent = game.Workspace
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = PopCatHubV2
@@ -384,9 +391,53 @@ UICorner_12.Parent = TextBox_3
 UITextSizeConstraint_11.Parent = TextBox_3
 UITextSizeConstraint_11.MaxTextSize = 30
 
+Walkspeed_2.Name = "Walkspeed"
+Walkspeed_2.Parent = Page2
+Walkspeed_2.Active = true
+Walkspeed_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Walkspeed_2.BackgroundTransparency = 1.000
+Walkspeed_2.Position = UDim2.new(0.0355658866, 0, 0.184817404, 0)
+Walkspeed_2.Size = UDim2.new(0, 428, 0, 68)
+Walkspeed_2.ZIndex = 2
+
+TextButton_6.Parent = Walkspeed_2
+TextButton_6.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+TextButton_6.Position = UDim2.new(0.747483134, 0, 0.0109890206, 0)
+TextButton_6.Size = UDim2.new(0, 108, 0, 68)
+TextButton_6.ZIndex = 2
+TextButton_6.Font = Enum.Font.FredokaOne
+TextButton_6.Text = "Set"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 40.000
+TextButton_6.TextWrapped = true
+
+UICorner_13.Parent = TextButton_6
+
+UITextSizeConstraint_12.Parent = TextButton_6
+UITextSizeConstraint_12.MaxTextSize = 60
+
+TextBox_4.Parent = Walkspeed_2
+TextBox_4.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+TextBox_4.Position = UDim2.new(0, 0, 0.0109890113, 0)
+TextBox_4.Size = UDim2.new(0, 313, 0, 68)
+TextBox_4.ZIndex = 2
+TextBox_4.Font = Enum.Font.FredokaOne
+TextBox_4.PlaceholderText = "Enter JumpPower Here"
+TextBox_4.Text = ""
+TextBox_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_4.TextScaled = true
+TextBox_4.TextSize = 20.000
+TextBox_4.TextWrapped = true
+
+UICorner_14.Parent = TextBox_4
+
+UITextSizeConstraint_13.Parent = TextBox_4
+UITextSizeConstraint_13.MaxTextSize = 30
+
 -- Scripts:
 
-local function NTXE_fake_script() -- NoclipFly.LocalScript 
+local function LNJWR_fake_script() -- NoclipFly.LocalScript 
 	local script = Instance.new('LocalScript', NoclipFly)
 
 	local c = workspace.CurrentCamera
@@ -464,8 +515,8 @@ local function NTXE_fake_script() -- NoclipFly.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NTXE_fake_script)()
-local function UZSLG_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(LNJWR_fake_script)()
+local function HNPFUUN_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -477,8 +528,8 @@ local function UZSLG_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UZSLG_fake_script)()
-local function CJKQ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(HNPFUUN_fake_script)()
+local function ELYDA_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local Page1 = script.Parent.Parent.Parent.Page1
@@ -491,8 +542,8 @@ local function CJKQ_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CJKQ_fake_script)()
-local function LAYY_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(ELYDA_fake_script)()
+local function XAWJBJ_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local Page1 = script.Parent.Parent.Parent.Page1
@@ -505,16 +556,16 @@ local function LAYY_fake_script() -- TextButton_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LAYY_fake_script)()
-local function RQVTY_fake_script() -- Welcome.Name 
+coroutine.wrap(XAWJBJ_fake_script)()
+local function SLRHO_fake_script() -- Welcome.Name 
 	local script = Instance.new('LocalScript', Welcome)
 
 	local player = game.Players.LocalPlayer
 	
 	script.Parent.Text = "Hi, "..player.DisplayName.." welcome to PopCat Hub V2"
 end
-coroutine.wrap(RQVTY_fake_script)()
-local function HEVOAL_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(SLRHO_fake_script)()
+local function YHGPR_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -526,8 +577,8 @@ local function HEVOAL_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HEVOAL_fake_script)()
-local function IPQICQ_fake_script() -- Loading.Loading 
+coroutine.wrap(YHGPR_fake_script)()
+local function ZPBG_fake_script() -- Loading.Loading 
 	local script = Instance.new('LocalScript', Loading)
 
 	while wait(0) do
@@ -539,8 +590,8 @@ local function IPQICQ_fake_script() -- Loading.Loading
 		wait(1)
 	end
 end
-coroutine.wrap(IPQICQ_fake_script)()
-local function ZXQU_fake_script() -- Intro.LocalScript 
+coroutine.wrap(ZPBG_fake_script)()
+local function WKEX_fake_script() -- Intro.LocalScript 
 	local script = Instance.new('LocalScript', Intro)
 
 	local Welcome = script.Parent.Welcome
@@ -584,8 +635,8 @@ local function ZXQU_fake_script() -- Intro.LocalScript
 	Intro:Destroy()
 	
 end
-coroutine.wrap(ZXQU_fake_script)()
-local function LLZTCF_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(WKEX_fake_script)()
+local function SMOLCE_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -593,4 +644,17 @@ local function LLZTCF_fake_script() -- TextButton_5.LocalScript
 			game.Workspace.Gravity = setGravity
 		end)
 end
-coroutine.wrap(LLZTCF_fake_script)()
+coroutine.wrap(SMOLCE_fake_script)()
+local function BRID_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setJumpPower = script.Parent.Parent.TextBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.JumpHeight = setJumpPower
+		end
+	end)
+end
+coroutine.wrap(BRID_fake_script)()
