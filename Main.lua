@@ -468,11 +468,7 @@ local function LNJWR_fake_script() -- NoclipFly.LocalScript
 			nextMove = nextMove + Vector3.new(0,0,1)
 		end
 		-- Up/Down
-		if userInput:IsKeyDown("E") then
-			nextMove = nextMove + Vector3.new(0,1,0)
-		elseif userInput:IsKeyDown("Q") then
-			nextMove = nextMove + Vector3.new(0,-1,0)
-		end
+	
 		return CFrame.new( nextMove * (speed * deltaTime) )
 	end
 	
